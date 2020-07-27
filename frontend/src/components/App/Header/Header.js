@@ -168,7 +168,7 @@ const Header = ({ location, toggleSideBar }) => {
           <Logo to={Routes.HOME}>{SiteInfo.name}</Logo>
 
           <Spacing left="sm" right="md">
-            <Search location={location} placeholder="Search" />
+            <Search location={location} placeholder="Procurar" />
           </Spacing>
         </LeftSide>
 

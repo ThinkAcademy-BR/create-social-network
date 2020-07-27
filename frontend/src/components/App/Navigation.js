@@ -60,28 +60,28 @@ const Navigation = () => {
       <Link exact activeClassName="selected" to={Routes.HOME}>
         <ListItem>
           <HomeIcon />
-          <Name>Home</Name>
+          <Name>Página Inicial</Name>
         </ListItem>
       </Link>
 
       <Link exact activeClassName="selected" to={Routes.EXPLORE}>
         <ListItem>
           <ExploreIcon width={20} />
-          <Name>Explore</Name>
+          <Name>Explorar</Name>
         </ListItem>
       </Link>
 
       <Link exact activeClassName="selected" to={Routes.PEOPLE}>
         <ListItem>
           <PeopleIcon />
-          <Name>People</Name>
+          <Name>Pessoas</Name>
         </ListItem>
       </Link>
 
       <Link exact activeClassName="selected" to={Routes.NOTIFICATIONS}>
         <ListItem>
           <NotificationIcon width={18} />
-          <Name>Notifications</Name>
+          <Name>Notificações</Name>
         </ListItem>
       </Link>
 
@@ -92,7 +92,7 @@ const Navigation = () => {
       >
         <ListItem>
           <EnvelopeIcon width={18} />
-          <Name>Messages</Name>
+          <Name>Mensagens</Name>
         </ListItem>
       </Link>
     </List>

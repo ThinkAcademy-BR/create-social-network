@@ -102,7 +102,7 @@ const CreatePost = () => {
 
     if (file.size >= MAX_POST_IMAGE_SIZE) {
       message.error(
-        `File size should be less then ${MAX_POST_IMAGE_SIZE / 1000000}MB`
+        `O tamanho do arquivo deve ser menor que ${MAX_POST_IMAGE_SIZE / 1000000}MB`
       );
       return;
     }
@@ -169,7 +169,7 @@ const CreatePost = () => {
                     value={title}
                     onFocus={handleOnFocus}
                     onChange={handleTitleChange}
-                    placeholder="Add a post"
+                    placeholder="Adicionar uma postagem"
                   />
 
                   {!isFocused && (
@@ -188,16 +188,16 @@ const CreatePost = () => {
                 {isFocused && (
                   <Options>
                     <PostImageUpload
-                      label="Photo"
+                      label="Imagem"
                       handleChange={handlePostImageUpload}
                     />
 
                     <Buttons>
                       <Button text type="button" onClick={handleReset}>
-                        Cancel
+                        Cancelar
                       </Button>
                       <Button disabled={isShareDisabled} type="submit">
-                        Share
+                        Compartilhar
                       </Button>
                     </Buttons>
                   </Options>
@@ -208,7 +208,7 @@ const CreatePost = () => {
                     <Spacing top="xs" bottom="sm">
                       <Error size="xs">
                         {apiError
-                          ? 'Something went wrong, please try again.'
+                          ? 'Alguma coisa deu errada. Por favor tente novamente.'
                           : error}
                       </Error>
                     </Spacing>

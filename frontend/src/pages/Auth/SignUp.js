@@ -71,27 +71,27 @@ const SignUp = ({ history, refetch }) => {
 
   const validate = () => {
     if (!fullName || !email || !username || !password) {
-      return 'All fields are required';
+      return 'Todos os campos são obrigatórios';
     }
 
     if (fullName.length > 50) {
-      return 'Full name no more than 50 characters';
+      return 'Nome completo não pode ter no máximo 50 caracteres';
     }
 
     const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!emailRegex.test(String(email).toLowerCase())) {
-      return 'Enter a valid email address.';
+      return 'Informe um e-mail válido.';
     }
 
     const usernameRegex = /^(?!.*\.\.)(?!.*\.$)[^\W][\w.]{0,29}$/;
     if (!usernameRegex.test(username)) {
-      return 'Usernames can only use letters, numbers, underscores and periods';
+      return 'Os nomes de usuário podem usar apenas letras, números, sublinhados e pontos';
     } else if (username.length > 20) {
-      return 'Username no more than 50 characters';
+      return 'Nome de usuário só pode ter no máximo 50 caracteres';
     }
 
     if (password.length < 6) {
-      return 'Password min 6 characters';
+      return 'A senha deve ter no mínimo 6 caracteres';
     }
 
     return false;
@@ -148,18 +148,18 @@ const SignUp = ({ history, refetch }) => {
             <Welcome>
               <div>
                 <Heading color="white">
-                  Connect with friends and the world around you.
+                  Prepare-se para as oportunidades ao seu redor.
                 </Heading>
               </div>
 
-              <p>See photos and updates from your friends.</p>
-              <p>Follow your interests.</p>
-              <p>Hear what people are talking about.</p>
+              <p>Veja fotos e atualizações em grupos de estudo.</p>
+              <p>Siga seus interesses.</p>
+              <p>Aprenda com quem também está aprendendo.</p>
             </Welcome>
 
             <Form>
               <Spacing bottom="md">
-                <H1>Create Account</H1>
+                <H1>Criar Conta</H1>
               </Spacing>
 
               <form onSubmit={e => handleSubmit(e, signup)}>
@@ -168,7 +168,7 @@ const SignUp = ({ history, refetch }) => {
                   name="fullName"
                   values={fullName}
                   onChange={handleChange}
-                  placeholder="Full name"
+                  placeholder="Nome Completo"
                   borderColor="white"
                 />
                 <Spacing top="xs" bottom="xs">
@@ -177,7 +177,7 @@ const SignUp = ({ history, refetch }) => {
                     name="email"
                     values={email}
                     onChange={handleChange}
-                    placeholder="Email"
+                    placeholder="E-mail"
                     borderColor="white"
                   />
                 </Spacing>
@@ -186,7 +186,7 @@ const SignUp = ({ history, refetch }) => {
                   name="username"
                   values={username}
                   onChange={handleChange}
-                  placeholder="Username"
+                  placeholder="Nome de Usuário"
                   borderColor="white"
                 />
                 <Spacing top="xs" bottom="xs">
@@ -195,7 +195,7 @@ const SignUp = ({ history, refetch }) => {
                     name="password"
                     values={password}
                     onChange={handleChange}
-                    placeholder="Password"
+                    placeholder="Senha"
                     borderColor="white"
                   />
                 </Spacing>
@@ -204,7 +204,7 @@ const SignUp = ({ history, refetch }) => {
 
                 <Spacing top="sm" />
                 <Button size="large" disabled={loading}>
-                  Sign up
+                  Cadastre-se
                 </Button>
               </form>
             </Form>

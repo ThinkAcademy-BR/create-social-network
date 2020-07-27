@@ -56,7 +56,7 @@ const SignIn = ({ history, location, refetch }) => {
     e.preventDefault();
 
     if (!emailOrUsername || !password) {
-      setError('All fields are required');
+      setError('Todos os campos são obrigatórios');
       return;
     }
 
@@ -109,7 +109,7 @@ const SignIn = ({ history, location, refetch }) => {
                 name="emailOrUsername"
                 values={emailOrUsername}
                 onChange={handleChange}
-                placeholder="Email or Username"
+                placeholder="E-mail ou Usuário"
                 borderColor="white"
               />
             </InputContainer>
@@ -120,11 +120,11 @@ const SignIn = ({ history, location, refetch }) => {
                 name="password"
                 values={password}
                 onChange={handleChange}
-                placeholder="Password"
+                placeholder="Senha"
                 borderColor="white"
               />
               <A to={Routes.FORGOT_PASSWORD}>
-                <ForgotPassword>Forgot password?</ForgotPassword>
+                <ForgotPassword>Esqueceu a senha?</ForgotPassword>
               </A>
             </InputContainer>
 

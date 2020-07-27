@@ -10,22 +10,22 @@ export const timeAgo = unixTimestamp => {
   let interval = Math.floor(seconds / 31536000);
 
   if (interval > 1) {
-    return interval + ' years';
+    return interval + ' anos';
   }
 
   interval = Math.floor(seconds / 2592000);
   if (interval > 1) {
-    return interval + ' months';
+    return interval + ' meses';
   }
 
   interval = Math.floor(seconds / 86400);
   if (interval > 1) {
-    return interval + ' days';
+    return interval + ' dias';
   }
 
   interval = Math.floor(seconds / 3600);
   if (interval > 1) {
-    return interval + ' hours';
+    return interval + ' horas';
   }
 
   interval = Math.floor(seconds / 60);
@@ -33,7 +33,7 @@ export const timeAgo = unixTimestamp => {
     return interval + ' mins';
   }
 
-  return Math.floor(seconds) + ' seconds';
+  return Math.floor(seconds) + ' segundos';
 };
 
 /**

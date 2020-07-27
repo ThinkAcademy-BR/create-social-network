@@ -190,7 +190,7 @@ const MessagesUsers = ({ location, authUser }) => {
           location={location}
           backgroundColor="white"
           forMessage
-          placeholder="Search message"
+          placeholder="Pesquisar mensagem"
         />
       </SearchContainer>
 

@@ -220,7 +220,7 @@ const PostCard = ({
               {likes.length} likes
               <Spacing />
               <StyledButton onClick={toggleComment} text>
-                {comments.length} comments
+                {comments.length} comentários
               </StyledButton>
             </Count>
 
@@ -234,7 +234,7 @@ const PostCard = ({
               />
 
               <Button fullWidth text onClick={toggleCreateComment}>
-                <PostCommentIcon /> <Spacing inline left="xxs" /> <b>Comment</b>
+                <PostCommentIcon /> <Spacing inline left="xxs" /> <b>Comentário</b>
               </Button>
             </Icons>
           </CountAndIcons>
