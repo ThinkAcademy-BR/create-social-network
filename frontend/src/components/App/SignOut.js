@@ -25,7 +25,7 @@ const SignOut = ({ client, history }) => {
 
   return (
     <Button text onClick={handleSignOut}>
-      Sign out
+      Sair
     </Button>
   );
 };

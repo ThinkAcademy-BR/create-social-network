@@ -53,7 +53,7 @@ const HeaderUserDropDown = ({ userRef }) => {
           username: auth.user.username,
         })}
       >
-        My Profile
+        Meu Perfil
       </Link>
 
       <Item>
